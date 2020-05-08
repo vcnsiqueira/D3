@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bar Chart</title>
+    <style>
+    .chart {
+        width: 800px;
+        height: 400px;
+        background-color: #F7F7F7;
+        margin: 25px auto;
+    }
+    .bar {
+        display: inline-block;
+        width: 25px;
+        height: 300px;
+        background-color: #7ED36D;
+        margin: 5px;
+    }
+    .x-axis_scatterplot path .x-axis_scatterplot line {
+        shape-rendering: crispEdges;
+    }
+    .x-axis_scatterplot text {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .y-axis_scatterplot path .y-axis_scatterplot line {
+        shape-rendering: crispEdges;
+    }
+    .y-axis_scatterplot text {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    button {
+        display: inline;
+        margin: 0 auto;
+    }
+    </style>
+</head>
+<body>
+    <div id="barchart" class="chart"></div>
+    <div id="scatterplot" class="chart"></div>
+    <div id="new_barchart" class="chart"></div>
+    <hr/>
+    <button id="reverte" type="button">Reverse</button>
+    <button id="aleatorio" type="button">Random Data</button>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/scatter.js"></script>
+    <script src="../scripts/barchart.js"></script>
+</body>
+</html>
