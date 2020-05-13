@@ -75,7 +75,7 @@ scatter_svg.append('g')
 
 let y_axis = d3.axisLeft(y_scale)
     .ticks(5)
-    //.tickFormat(d => d + '%') // exemplo de inclusão de % no eixo y
+    .tickFormat(d => d + '%') // exemplo de inclusão de % no eixo y
 scatter_svg.append('g')
     .attr('class', 'y-axis_scatterplot')
     .attr('transform', 'translate(' + scatter_padding + ',0)')
